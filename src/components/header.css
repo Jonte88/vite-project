@@ -3,15 +3,20 @@ nav {
     left: 0;
     padding: 1vw;
     width: 100%;
-    background-color: #19647E;
+    background-color: #003B77;
     display: inline-flex;
 }
 nav > img {
+    margin-top: auto;
+    margin-bottom: auto;
     margin-left: 1vw;
-    width: 5vw;
+    height: 5vw;
+    aspect-ratio: 617 / 432;
 }
 nav > h1 {
-    font-size: 2vw;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 3vw;
     margin-left: 2vw;
-    color: #D6D6DD;
+    color: white;
 }

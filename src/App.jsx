@@ -14,9 +14,9 @@ function App() {
 
   return (
     <div>
+      <h1>Kommuner och Regioner:</h1>
       {data ? (
         <div>
-          <h1>Skolor i Tomelilla</h1>
           <table>
             <tr className="myTableRow">
               <th>Kommun: </th>
