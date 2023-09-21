@@ -1,0 +1,14 @@
+.happyDogo {
+    width: 10vw;
+    border: 3px solid black;
+    margin: auto;
+}
+table {
+    border-collapse: collapse;
+}
+th, td {
+    border-bottom: 1px solid black;
+}
+.transparent {
+    color: transparent;
+}
