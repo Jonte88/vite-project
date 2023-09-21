@@ -1,11 +1,13 @@
 import React from "react";
 import "./header.css";
+import Logo from '../assets/logo.png';
 
 function Header() {
   
   return (
     <nav>
-        <h1>Skolor i Tomelilla</h1>
+        <img src={Logo} alt="Tomelilla kommun"/>
+        <h1>Tomelilla kommun</h1>
     </nav>
   );
 }
