@@ -5,7 +5,7 @@ function App() {
 
   useEffect(() => {
     fetch(
-      "https://data.tomelilla.se/rowstore/dataset/3617552e-4c28-4a46-9b74-ac8bbbfee33f"
+      "https://catalog.skl.se/rowstore/dataset/ed60ba69-f267-4b63-9f62-840342ba29f6"
     )
       .then((response) => response.json())
       .then((json) => setData(json))
@@ -19,24 +19,32 @@ function App() {
           <h1>Skolor i Tomelilla</h1>
           <table>
             <tr className="myTableRow">
-              <th>Namn: </th>
-              <th className="transparent">-----</th>
-              <th>Adress: </th>
+              <th>Kommun: </th>
               <th className="transparent">---</th>
-              <th>Antal elever:</th>
+              <th>Ort och postnummer: </th>
+              <th className="transparent">---</th>
+              <th>Telefon:</th>
+              <th className="transparent">---</th>
+              <th>Webbadress:</th>
             </tr>
-            {data.results.map((school) => (
-              <tr key={school.id} className="myTableRow">
+            {data.results.map((county) => (
+              <tr key={county.id} className="myTableRow">
                 <td>
-                  <h3>{school.name}</h3>
+                  <h3>{county.namn}</h3>
                 </td>
                 <td></td>
                 <td>
-                  <p>{school.street}</p>
+                  <p>
+                    {county.ort} {county.postnr}
+                  </p>
                 </td>
                 <td></td>
                 <td>
-                  <p>{school.students}</p>
+                  <p>{county.telefon}</p>
+                </td>
+                <td></td>
+                <td>
+                  <p>{county.webbadress}</p>
                 </td>
               </tr>
             ))}
