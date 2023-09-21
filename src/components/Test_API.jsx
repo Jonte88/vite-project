@@ -5,7 +5,7 @@ function Test() {
 
   useEffect(() => {
     fetch(
-      "https://dataportalen.stockholm.se/dataportalen/Data/Utbildningsforvaltningen/Alla_skolor_1920_elevantal.zip"
+      "http://api.scb.se/OV0104/v1/doris/sv/ssd/BO/BO0406/BO0406E/BO0406Tab04"
     )
       .then((response) => response.json())
       .then((json) => setData(json))
