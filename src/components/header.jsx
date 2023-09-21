@@ -4,9 +4,9 @@ import "./header.css";
 function Header() {
   
   return (
-    <div>
-      <h1>Header</h1>
-    </div>
+    <nav>
+        <h1>Skolor i Tomelilla</h1>
+    </nav>
   );
 }
 
